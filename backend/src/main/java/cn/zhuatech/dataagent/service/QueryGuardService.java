@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 package cn.zhuatech.dataagent.service;
 import jakarta.validation.constraints.*; import org.springframework.stereotype.Service; import java.util.*; import java.util.regex.Pattern;
 /** 只读查询安全门；演示实现不连接真实数据库。 */
