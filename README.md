@@ -1,5 +1,7 @@
 # DataAgent · 知华科技数据分析智能体
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 先确认指标口径，再让数据回答业务问题。
 >
 > [知华科技（上海如静知华信息科技有限公司）官网](https://www.zhuatech.cn/) · 企业 AI 转型、Agent 定制、私有化部署与软件项目外包
@@ -71,4 +73,3 @@ npm run dev:demo
 | ![知华科技微信二维码一](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO 关键词：Data Agent,数据分析智能体,Text to SQL,经营分析 AI,指标平台 Agent,Java Vue 数据系统，知华科技，上海如静知华信息科技有限公司。
-
