@@ -1,5 +1,9 @@
 [简体中文](README.md) | **English**
 
+## Functional update: Numeric data quality profiling
+
+Profiles numeric and null values with population standard deviation, median and row-level Z-score outliers; constant columns have no Z-score outliers. Available to signed-in users with editable inputs, explicit validation and JSON export. See [API, examples and limitations](docs/AI_BUSINESS_UPGRADE_20261023.md). No external model calls or automatic business changes. Existing license and contact details are retained.
+
 # ZhuaTech DataAgent
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for enterprise data, knowledge, search, analytics, and AI operations.
