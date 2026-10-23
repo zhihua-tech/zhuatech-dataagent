@@ -85,3 +85,9 @@ npm run dev:demo
 | ![知华科技微信二维码一](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO 关键词：Data Agent,数据分析智能体,Text to SQL,经营分析 AI,指标平台 Agent,Java Vue 数据系统，知华科技，上海如静知华信息科技有限公司。
+
+## 输入对照与版本化快照
+
+在既有「数据对账总额与缺失双门槛」基础上，新增 `/comparison.html`：基准与候选两组数据都由当前真实算法重算，按编号展示新增、移除、逐字段变化和精确数值差，支持筛选、分页和全量导出。原核算入口可导出输入快照，对照页经后端完整校验后整体导入；失败不覆盖当前输入。
+
+快照区分项目、字段契约及算法版本。建议较宽松不代表风险已下降，输入摘要不是签名；操作人和时间仅为响应元数据，不是持久化审计。本次未新增模型调用或业务写入，也不代表全系统生产认证。详见[输入对照操作与接口说明](docs/INPUT-COMPARISON.md)。
