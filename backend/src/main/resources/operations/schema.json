@@ -1,0 +1,93 @@
+{
+  "slug": "dataagent",
+  "title": "数据对账总额与缺失双门槛",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "sourceRows",
+      "label": "源有效记录数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "targetRows",
+      "label": "目标记录数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "duplicates",
+      "label": "目标重复记录数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "sourceTotal",
+      "label": "源金额总额",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "targetTotal",
+      "label": "目标金额总额",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "tolerance",
+      "label": "允许绝对金额差",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    }
+  ],
+  "columns": [
+    {
+      "key": "uniqueTargetRows",
+      "label": "目标唯一记录"
+    },
+    {
+      "key": "rowDifference",
+      "label": "唯一行数量差"
+    },
+    {
+      "key": "amountDifference",
+      "label": "金额差元"
+    }
+  ],
+  "description": "同时检查源/目标记录数、重复行及金额总额差异，防止只对总额而漏掉记录损失。金额差异按绝对误差阈值，不抽取真实数据。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-23",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "sourceRows": "1000",
+        "targetRows": "1000",
+        "duplicates": "0",
+        "sourceTotal": "12000",
+        "targetTotal": "12000",
+        "tolerance": "0.01"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "rowDifference": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "targetRows": "999"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "duplicates": "1"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "targetTotal": "12000.01"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "amountDifference": "#0.01"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "targetTotal": "12000.02"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "duplicates": "1001"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "targetTotal": "11999.99"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "amountDifference": "#-0.01"
+    },
+    "error": false
+  }
+]
